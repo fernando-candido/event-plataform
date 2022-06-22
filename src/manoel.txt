@@ -1,0 +1,28 @@
+CMS = Content Managemene System
+Traz tanto o painel de ADMIN tanto quanto a parte visual do front-end (temas)
+Headless CMS (GraphCMS): Painel de ADMIN (dados fonecidos através de uma API REST  ou GraphQL)
+React que consome essa API DO CMS
+
+//tem basicamente duas requisições, são elas => querry / mutation
+
+querry = buscar dados   (só vai buscar alterações)
+mutation = criar, alterar ou deletar dados.  (tudo que altera alguma informação)
+
+abrir o site -> API playground(icone de play no canto esquerdo) -> new query
+
+é possivel tanto escrever quanto ir clicando na interface para criar uma query.
+
+query MyQuery {
+  lessons {
+    id
+    slug
+    title
+    teacher {
+      name
+      bio
+      avatarURL
+    }
+  }
+}
+
+
